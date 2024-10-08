@@ -151,8 +151,8 @@ nav {
 }
 
 .form-group {
-    display: flex; /* Utilise flexbox pour aligner les éléments */
-    flex-direction: column; /* Aligne label et input verticalement */
+    display: flex; 
+    flex-direction: column; 
     margin-top: 30px;
 }
 
@@ -179,7 +179,7 @@ input[type="text"], input[type="email"], textarea {
     width: 70%;
     border-radius: 10px;
     font-size: 24px;
-    align-self: center; /* Centre le bouton horizontalement dans son conteneur */
+    align-self: center; 
 }
 
 .btn-submit-tarif {
@@ -190,7 +190,7 @@ input[type="text"], input[type="email"], textarea {
     width: 70%;
     border-radius: 40px;
     font-size: 24px;
-    align-self: center; /* Centre le bouton horizontalement dans son conteneur */
+    align-self: center;
 }
 
 .submit {

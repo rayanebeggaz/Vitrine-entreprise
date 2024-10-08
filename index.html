@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Index</title>
+    <script>
+      function scrollToDiv(elementId) {
+        const targetDiv = document.getElementById(elementId);
+
+        if (targetDiv) {
+          targetDiv.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        } else {
+          console.error("L'élément avec l'ID spécifié n'existe pas.");
+        }
+      }
+    </script>
   </head>
   <body>
     <nav>
@@ -14,10 +28,19 @@
             <img src="Ma mutuelle.png" alt="logo" class="logo"
           /></a>
         </li>
-        <li><a href="#a-propos">À propos</a></li>
         <li>
-          <a href="#contact" class="btn btn-violet">Contacter un conseiller</a>
-          <a href="#tarif" class="btn btn-rose">Obtenir un tarif</a>
+          <a onclick="scrollToDiv('a-propos')" href="#a-j">À propos</a>
+        </li>
+        <li>
+          <a href="#" onclick="scrollToDiv('contact')" class="btn btn-violet"
+            >Contacter un conseiller</a
+          >
+          <button
+            class="btn btn-rose"
+            onclick="scrollToDiv('tarif-entreprise')"
+          >
+            <a href="#tarif">Obtenir un tarif</a>
+          </button>
         </li>
       </ul>
     </nav>
@@ -26,7 +49,12 @@
       <div class="bloc">
         <div class="icons-containter">
           <img class="icon" src="specialiste.png" alt="icon-entreprise" />
-          <img class="iconShow" src="bouton-suivant.png" alt="show" />
+          <img
+            onclick="scrollToDiv('tarif-entreprise')"
+            class="iconShow"
+            src="bouton-suivant.png"
+            alt="show"
+          />
         </div>
 
         <h1 class="bloc-header">Je suis une entreprise</h1>
@@ -38,7 +66,12 @@
       <div class="bloc">
         <div class="icons-containter">
           <img class="icon" src="nephrologue.png" alt="icon-particulier" />
-          <img class="iconShow" src="bouton-suivant.png" alt="show" />
+          <img
+            onclick="scrollToDiv('tarif-particulier')"
+            class="iconShow"
+            src="bouton-suivant.png"
+            alt="show"
+          />
         </div>
 
         <h1 class="bloc-header">Je suis un particulier</h1>
@@ -101,11 +134,11 @@
       </div>
     </div>
 
-    <div id="tarif-entreprise" class="tarif-entreprise">
+    <div id="tarif-particulier" class="tarif-entreprise">
       <h1 class="title-effect">Offres particulier</h1>
 
-      <div id="blocs-tarif-entreprise" class="bloc-continer-tarif">
-        <div id="entreprise-tarif-1" class="bloc-tarif">
+      <div id="blocs-tarif-parcticulier" class="bloc-continer-tarif">
+        <div id="particulier" class="bloc-tarif">
           <h1 class="tarif-header">Offre 1</h1>
           <div class="tarif-descriptin-container">
             <span class="tarif-descriptin"
