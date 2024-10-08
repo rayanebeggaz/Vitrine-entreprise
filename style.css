@@ -110,6 +110,11 @@ nav {
     height: 10%; 
     margin-right: 20px;
 }
+.iconShow:hover{
+    opacity: 0.8;
+    width: 11%; 
+    height: 11%; 
+}
 .icons-containter{
     display: flex;
     justify-content: space-between;   
@@ -261,6 +266,7 @@ input[type="text"], input[type="email"], textarea {
 .client-slider span {
     margin: 0 30px;
     font-size: 36px;
+    padding: 20px 30;
     white-space: nowrap;
 }
 
@@ -271,4 +277,44 @@ input[type="text"], input[type="email"], textarea {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #C0B4F2;
+}
+
+.about-content {
+    max-width: 55%;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    color: #2a5079; 
+    margin-bottom: 40px;
+}
+
+.about-content p {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    max-width: 35%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+.a-propos-logo{
+    padding: 40px 10px;
+    background-color: white;
 }
