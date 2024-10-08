@@ -16,9 +16,7 @@
         </li>
         <li><a href="#a-propos">À propos</a></li>
         <li>
-          <a href="#contacter" class="btn btn-violet"
-            >Contacter un conseiller</a
-          >
+          <a href="#contact" class="btn btn-violet">Contacter un conseiller</a>
           <a href="#tarif" class="btn btn-rose">Obtenir un tarif</a>
         </li>
       </ul>
@@ -26,15 +24,146 @@
 
     <div class="bloc-continer">
       <div class="bloc">
-        <img class="icon" src="specialiste.png" alt="icon-entreprise" />
+        <div class="icons-containter">
+          <img class="icon" src="specialiste.png" alt="icon-entreprise" />
+          <img class="iconShow" src="bouton-suivant.png" alt="show" />
+        </div>
+
         <h1 class="bloc-header">Je suis une entreprise</h1>
-        <p class="bloc-body">j'assure ....</p>
+        <p class="bloc-body">
+          <span class="title-effect">Ma mutuelle d'entreprise :</span> santé,
+          protection, solidarité, services personnalisés.
+        </p>
       </div>
       <div class="bloc">
-        <img class="icon" src="nephrologue.png" alt="icon-particulier" />
+        <div class="icons-containter">
+          <img class="icon" src="nephrologue.png" alt="icon-particulier" />
+          <img class="iconShow" src="bouton-suivant.png" alt="show" />
+        </div>
+
         <h1 class="bloc-header">Je suis un particulier</h1>
-        <p class="bloc-body">j'assure ....</p>
+        <p class="bloc-body">
+          <span class="title-effect">Ma mutuelle personnelle :</span>
+          couverture, bien-être, prévention, assistance au quotidien.
+        </p>
       </div>
+    </div>
+
+    <div class="client-carousel">
+      <div class="client-slider">
+        <span>BlaBlaCar</span>
+        <span>Monoprix</span>
+        <span>Back Market</span>
+        <span>Caudalie</span>
+        <span>Vitaliance</span>
+        <span>Axereal</span>
+        <span>Netatmo</span>
+      </div>
+    </div>
+
+    <div id="tarif-entreprise" class="tarif-entreprise">
+      <h1 class="title-effect">Offres entreprise</h1>
+
+      <div id="blocs-tarif-entreprise" class="bloc-continer-tarif">
+        <div id="entreprise-tarif-1" class="bloc-tarif">
+          <h1 class="tarif-header">Offre 1</h1>
+          <div class="tarif-descriptin-container">
+            <span class="tarif-descriptin"
+              >descirption.............<br />.....................
+            </span>
+          </div>
+          <div class="submit">
+            <button class="btn-submit-tarif" type="submit">Acheter</button>
+          </div>
+        </div>
+        <div id="entreprise-tarif-2" class="bloc-tarif">
+          <h1 class="tarif-header">Offre 2</h1>
+          <div class="tarif-descriptin-container">
+            <span class="tarif-descriptin"
+              >descirption.............<br />.....................
+            </span>
+          </div>
+          <div class="submit">
+            <button class="btn-submit-tarif" type="submit">Acheter</button>
+          </div>
+        </div>
+        <div id="entreprise-tarif-1" class="bloc-tarif">
+          <h1 class="tarif-header">Offre 3</h1>
+          <div class="tarif-descriptin-container">
+            <span class="tarif-descriptin"
+              >descirption.............<br />.....................
+            </span>
+          </div>
+          <div class="submit">
+            <button class="btn-submit-tarif" type="submit">Acheter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tarif-entreprise" class="tarif-entreprise">
+      <h1 class="title-effect">Offres particulier</h1>
+
+      <div id="blocs-tarif-entreprise" class="bloc-continer-tarif">
+        <div id="entreprise-tarif-1" class="bloc-tarif">
+          <h1 class="tarif-header">Offre 1</h1>
+          <div class="tarif-descriptin-container">
+            <span class="tarif-descriptin"
+              >descirption.............<br />.....................
+            </span>
+          </div>
+          <div class="submit">
+            <button class="btn-submit-tarif" type="submit">Acheter</button>
+          </div>
+        </div>
+        <div id="entreprise-tarif-2" class="bloc-tarif">
+          <h1 class="tarif-header">Offre 2</h1>
+          <div class="tarif-descriptin-container">
+            <span class="tarif-descriptin"
+              >descirption.............<br />.....................
+            </span>
+          </div>
+          <div class="submit">
+            <button class="btn-submit-tarif" type="submit">Acheter</button>
+          </div>
+        </div>
+        <div id="entreprise-tarif-1" class="bloc-tarif">
+          <h1 class="tarif-header">Offre 3</h1>
+          <div class="tarif-descriptin-container">
+            <span class="tarif-descriptin"
+              >descirption.............<br />.....................
+            </span>
+          </div>
+          <div class="submit">
+            <button class="btn-submit-tarif" type="submit">Acheter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact">
+      <span class="title-effect">Contacter un conseiller</span>
+      <form action="#" method="post" class="formulaire">
+        <div class="form-group">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="sujet">Sujet :</label>
+          <input type="text" id="sujet" name="sujet" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="submit">
+          <button class="btn-submit" type="submit">Envoyer</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
