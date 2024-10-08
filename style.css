@@ -1,0 +1,111 @@
+/* Style de la barre de navigation horizontale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEDED;
+}
+
+nav {
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* Légère bordure en bas */
+
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-between; /* Centrer les éléments */
+    align-items: center; /* Aligner les éléments verticalement au centre */
+}
+
+.navbar li {
+    margin: 0 15px; /* Espace horizontal entre les liens */
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: black;
+    font-size: 34px;
+}
+
+.logo{
+    margin-left: 20px;
+
+}
+
+.btn{
+    
+    padding: 20px 20px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 40px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.btn-violet {
+    background-color: #C0B4F2; 
+    color: black;
+}
+
+.btn-rose{
+    background-color: #FFC6C6;
+    color: black;
+    margin-right :70px;
+    margin-left: 30px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.bloc-continer {
+    display: flex;
+    justify-content: center; /* Cartes côte à côte avec espace entre elles */
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.bloc {
+    background-color: #d7c3f2; /* Couleur violette pour la carte */
+    border-radius: 15px; /* Bordures arrondies */
+    width: 35%; 
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    margin: 10px 30px;
+
+}
+
+.bloc-header {
+    background-color: white; 
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.bloc-body {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
+    text-align: left;
+    height: 60%;
+}
+.icon{
+    width: 15%; 
+    height: 15%; 
+    justify-content: center;
+    border-radius: 10px; /* Bordures arrondies si souhaité */
+    margin-bottom: 15px; 
+}
